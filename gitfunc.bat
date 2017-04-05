@@ -1,4 +1,4 @@
-rem Automatic git push cmd
+:: Automatic git push function
 git pull
 git add .
 git commit -m $*
