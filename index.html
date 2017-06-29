@@ -10,15 +10,82 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
 		<!-- Custom CSS -->
-		<!-- <link rel="stylesheet" type="text/css" href="./css/typewriter.css"/> -->
-		<link rel="stylesheet" type="text/css" href="./css/bgmImg.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/parallax.css"/>
 	</head>
 
 	<body>
-		<div class="bgmImg">  		
-			<div class="center-align">
-				<h1 class="deep-purple-text text-lighten-2">Bryan's Webpage</h1>
+		<!--Materialized nav bar-->
+		<div class="navbar-fixed">
+			<nav class="deep-purple lighten-2">
+				<div class="nav-wrapper">
+					<a href="#">Bryan's Webpage</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="./res/BryanKo_Resume.pdf">Résumé</a></li>
+						<li><a href="#">Timeline</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div>
+			<div class="parallax"></div>
+			<!--Pic of me and description-->
+			<div class="row">
+				<div class="col s6 m6 offset-m3">
+					<div class="card cardOpc grey lighten-5 z-depth-1">
+						<div class="valign-wrapper center-align">  		
+							<div class=" col s3 offset-m1">
+								<img class="circle responsive-img" src="./img/me.jpg" alt="Bryan">
+							</div>
+							<div class="col s10">						
+								<span>
+									<!--deep-purple-text text-lighten-2-->
+									<h3>Bryan Ko</h3>
+									<h4>Undergraduate at University of California, Santa Cruz</h4>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<div class="section white">
+	    	<div class="row ">
+	      		<h2 class="header">Parallax</h2>
+	      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+	    	</div>
+	  	</div>
+		<div class="row">
+	        <div class="col s12 m6">
+	          <div class="card blue-grey darken-1">
+	            <div class="card-content white-text">
+	              <span class="card-title">Card Title</span>
+	              <p>I am a very simple card. I am good at containing small bits of information.
+	              I am convenient because I require little markup to use effectively.</p>
+	            </div>
+	            <div class="card-action">
+	              <a href="#">This is a link</a>
+	              <a href="#">This is a link</a>
+	            </div>
+	          </div>
+	        </div>
+      	</div>
+
+      	<footer class="page-footer deep-purple lighten-2">
+      		<div class="container">
+      			<div class="row center-align white-text">
+      				will contain linkedin/github/email icon
+      			</div>
+      		</div>
+      		<div class="footer-copyright">
+      			<div class="container">
+      				© 2017 Bryan Ko
+      				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      			</div>
+      		</div>
+
+    	</footer>
 	</body>
 </html>
