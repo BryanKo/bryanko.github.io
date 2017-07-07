@@ -5,9 +5,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!--Materialized-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+		<!--Font Awesome-->
+		<link rel="stylesheet" href="./font/css/font-awesome.min.css">
+
+		<!--Custom CSS-->
+		<link rel="stylesheet" type="text/css" href="./css/icoHover.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/parallax.css"/>
 	</head>
+
 	<body>
 		<div class="navbar-fixed">
 			<nav class="deep-purple accent-2">
@@ -22,12 +30,27 @@
 			</nav>
 		</div>
 
+		<div class="center-align">
 		<br>
+		<h1>CURRENTLY UNDER DEVELOPMENT</h1>
+		<br>
+		</div>
 
-		<footer class="page-footer deep-purple accent-2">
+      	<footer class="page-footer deep-purple accent-2">
       		<div class="container">
       			<div class="row center-align white-text">
-      				will contain linkedin/github/email icon
+      				Contact Information
+      				<div id="contactInfo" class="contact" onclick="contactNav()">
+	                    <a href="https://www.linkedin.com/in/bryan-ko-303292124/">
+	                        <i class="fa fa-linkedin-square fa-2x"></i>
+	                    </a>
+	                	<a href="https://github.com/BryanKo">
+	                		<i class="fa fa-github-square fa-2x""></i>
+	                	</a>
+	                	<a href="mailto:bkko@ucsc.edu">
+	                		<i class="fa fa-envelope fa-2x"></i>
+	                	</a>
+	                </div>
       			</div>
       		</div>
       		<div class="footer-copyright">
@@ -36,5 +59,11 @@
       			</div>
       		</div>
     	</footer>
+    	<!--Import jQuery before materialize.js-->
+      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+      	<!--Custom js-->
+		<script src="js/parallax.js" charset="utf-8"></script>
 	</body>
 </html>

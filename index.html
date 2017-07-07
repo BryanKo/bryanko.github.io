@@ -7,82 +7,68 @@
 
 		<!--Materialized-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
 		<!--Font Awesome-->
 		<link rel="stylesheet" href="./font/css/font-awesome.min.css">
 
 		<!--Custom CSS-->
 		<link rel="stylesheet" type="text/css" href="./css/parallax.css"/>
 		<link rel="stylesheet" type="text/css" href="./css/icoHover.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/cardSize.css"/>
 	</head>
 
 	<body>
+		<!--nav bar-->
 		<div class="navbar-fixed">
 			<nav class="deep-purple accent-2">
 				<div class="nav-wrapper">
 					<a href="#">Bryan's Webpage</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="./res/BryanKo_Resume.pdf">Résumé</a></li>
+						<li><a href="#aboutMe" id="aboutMeNav">About Me</a></li>
 						<li><a href="./routing.html">Timeline</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#contactInfo" id="contactInfoNav">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 
 		<div>
-			<div class="parallax"></div>
-			<div class="row">
-				<div class="col s6 m6 offset-m3">
-					<div class="card cardOpc grey lighten-5 z-depth-1">
-						<div class="valign-wrapper center-align">  		
-							<div class=" col s3 offset-m1">
-								<img class="circle responsive-img" src="./img/me.jpg" alt="Bryan">
-							</div>
-							<div class="col s10">						
-								<span>
-									<!--deep-purple-text text-lighten-2-->
-									<h3>Bryan Ko</h3>
-									<h4>Undergraduate at University of California, Santa Cruz</h4>
-								</span>
-							</div>
-						</div>
+			<div class="parallax-container">
+      			<div class="parallax"><img src="./img/background.png"></div>
+				<div class="card cardPos waves-effect waves-block waves-light center-align">
+					<div class="card-image waves-effect waves-light">
+						<img class="activator" src="img/me.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title center-align activator grey-text text-darken-4">Bryan Ko<i class="material-icons right">more_vert</i></span>
+						<p>Undergraduate at University of California, Santa Cruz</p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span> 
+						<p>I am a 4th year Computer Science major at University of California, Santa Cruz. My expected gradutation date is June 2018. I am currently interested in computer vision and web development. I love learning about computers and how they work.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="section white">
-	    	<div class="row ">
-	      		<h2 class="header">Parallax</h2>
-	      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-	    	</div>
-	  	</div>
-		<div class="row">
-	        <div class="col s12 m6">
-	          <div class="card blue-grey darken-1">
-	            <div class="card-content white-text">
-	              <span class="card-title">Card Title</span>
-	              <p>I am a very simple card. I am good at containing small bits of information.
-	              I am convenient because I require little markup to use effectively.</p>
-	            </div>
-	            <div class="card-action">
-	              <a href="#">This is a link</a>
-	              <a href="#">This is a link</a>
-	            </div>
-	          </div>
-	        </div>
+      	<!--About Me section-->
+      	<div id="aboutMe" class="contact" onclick="aboutNav()">
+      		<br><br>
+      		<h1>About Me section</h1>
+      		<hr> 		
       	</div>
 
       	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+      	<!--footer-->
       	<footer class="page-footer deep-purple accent-2">
       		<div class="container">
       			<div class="row center-align white-text">
       				Contact Information
-      				<div class="contact">
+      				<div id="contactInfo" class="contact" onclick="contactNav()">
 	                    <a href="https://www.linkedin.com/in/bryan-ko-303292124/">
 	                        <i class="fa fa-linkedin-square fa-2x"></i>
 	                    </a>
@@ -101,5 +87,12 @@
       			</div>
       		</div>
     	</footer>
+    	
+    	<!--Import jQuery before materialize.js-->
+      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      	<!--js files-->
+		<script src="js/pageNav.js" charset="utf-8"></script>
+		<script src="js/parallax.js" charset="utf-8"></script>
 	</body>
 </html>
