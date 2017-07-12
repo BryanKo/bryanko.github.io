@@ -3,19 +3,19 @@
 	<head>
 		<title>Bryan's Website</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<!--Materialized-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 		
 		<!--Font Awesome-->
-		<link rel="stylesheet" href="./font/css/font-awesome.min.css">
+		<script src="https://use.fontawesome.com/1139093eab.js"></script>
 
 		<!--Custom CSS-->
 		<link rel="stylesheet" type="text/css" href="./css/parallax.css"/>
 		<link rel="stylesheet" type="text/css" href="./css/icoHover.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/cardSize.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/position.css"/>
 	</head>
 
 	<body>
@@ -26,9 +26,9 @@
 					<a href="#">Bryan's Webpage</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="./res/BryanKo_Resume.pdf">Résumé</a></li>
-						<li><a href="#aboutMe" id="aboutMeNav">About Me</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="./routing.html">Timeline</a></li>
-						<li><a href="#contactInfo" id="contactInfoNav">Contact</a></li>
+						<li><a href="#contactInfo">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -36,8 +36,10 @@
 
 		<div>
 			<div class="parallax-container">
-      			<div class="parallax"><img src="./img/background.png"></div>
-				<div class="card cardPos waves-effect waves-block waves-light center-align">
+      			<div class="parallax img-resonsive"><img src="./img/background.png"></div>
+
+                    <!-- Old work that works without col
+					<div class="card cardPos2 waves-effect waves-block waves-light center-align z-depth-5">
 					<div class="card-image waves-effect waves-light">
 						<img class="activator" src="img/me.jpg">
 					</div>
@@ -46,29 +48,91 @@
 						<p>Undergraduate at University of California, Santa Cruz</p>
 					</div>
 					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span> 
+						<span class="card-title grey-text text-darken-4">About Me<i class="material-icons right">close</i></span> 
 						<p>I am a 4th year Computer Science major at University of California, Santa Cruz. My expected gradutation date is June 2018. I am currently interested in computer vision and web development. I love learning about computers and how they work.</p>
 					</div>
+				</div> -->
+
+				<div class="container">
+					<div class="row">
+						<div class="col s12 m4 offset-m4">
+							<div class="card cardPos center-align z-depth-5">
+								<div class="card-image waves-effect waves-light">
+									<img class="activator" src="img/me.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">Bryan Ko<i class="material-icons right">more_vert</i></span>
+									<p>Undergraduate at University of California, Santa Cruz</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">About Me<i class="material-icons right">close</i></span>
+									<p>I am a 4th year Computer Science major at University of California, Santa Cruz. My expected gradutation date is June 2018. I am currently interested in computer vision and web development. I love learning about computers and how they work.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+
 			</div>
 		</div>
-
       	<!--About Me section-->
-      	<div id="aboutMe" class="contact" onclick="aboutNav()">
-      		<br><br>
-      		<h1>About Me section</h1>
-      		<hr> 		
-      	</div>
+      	<div class="section">
+      		<span id="projects" class="anchor"></span>
+      		<h1 class="center-align">Projects</h1>
+      		<hr>
+      		<div class="container">
+      			<div class="row">
+      				<div class="col s12 m4 offset-m1">
+      					<div class="card cardPos center-align z-depth-3 sticky-action">
+      						<div class="card-image waves-effect waves-light">
+      							<a href="http://ec2-107-23-73-244.compute-1.amazonaws.com:8080/"><img src="./img/famLogo.png"></a>
+      						</div>
+      						<div class="card-content">
+      							<span class="card-title activator grey-text text-darken-4">Fam<i class="material-icons right">more_vert</i></span>
+      							<p>A simple web application</p>
+      						</div>
+      						<div class="card-action">
+      							<a href="https://github.com/BryanKo/Fam">Source Code</a>
+      						</div>
+      						<div class="card-reveal">
+      							<span class="card-title grey-text text-darken-4">Project Description<i class="material-icons right">close</i></span>
+      							<p>A MEAN stack web application helps users find activities/events/food/etc. near the user with the help of community reviews.</p>
+      							<br>
+      							<p>I was the project owner of this project and managed a team of 5.</p>
+      						</div>
+      					</div>
+      				</div>
 
-      	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      				<div class="col s12 m4 offset-m2">
+      					<div class="card cardPos center-align z-depth-3 sticky-action">
+      						<div class="card-image waves-effect waves-light">
+      							<a href="http://ec2-107-23-73-244.compute-1.amazonaws.com:8080/"><img src="./img/famLogo.png"></a>
+      						</div>
+      						<div class="card-content">
+      							<span class="card-title activator grey-text text-darken-4">Python script<i class="material-icons right">more_vert</i></span>
+      							<p>Some different project</p>
+      						</div>
+      						<div class="card-action">
+      							<a href="https://github.com/BryanKo/Fam">Source Code</a>
+      						</div>
+      						<div class="card-reveal">
+      							<span class="card-title grey-text text-darken-4">Project Description<i class="material-icons right">close</i></span>
+      							<p>A MEAN stack web application helps users find activities/events/food/etc. near the user with the help of community reviews.</p>
+      							<br>
+      							<p>I was the project owner of this project and managed a team of 5.</p>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
 
       	<!--footer-->
       	<footer class="page-footer deep-purple accent-2">
       		<div class="container">
       			<div class="row center-align white-text">
       				Contact Information
-      				<div id="contactInfo" class="contact" onclick="contactNav()">
+      				<div id="contactInfo" class="contact">
 	                    <a href="https://www.linkedin.com/in/bryan-ko-303292124/">
 	                        <i class="fa fa-linkedin-square fa-2x"></i>
 	                    </a>
@@ -91,8 +155,7 @@
     	<!--Import jQuery before materialize.js-->
       	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-      	<!--js files-->
-		<script src="js/pageNav.js" charset="utf-8"></script>
+      	<!--Custom js files-->
 		<script src="js/parallax.js" charset="utf-8"></script>
 	</body>
 </html>
