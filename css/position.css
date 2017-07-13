@@ -9,7 +9,12 @@
 
 .cardPos {
 	/*based on 1920px (width scales) x 886px (exact input)*/
-	margin-top: 20%; /*??*/
+	margin-top: 50%; /*??*/
+}
+
+.projCardPos {
+	margin-top: 15%;
+	margin-bottom: 15%
 }
 
 .section {
