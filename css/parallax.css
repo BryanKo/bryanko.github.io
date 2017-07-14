@@ -1,3 +1,6 @@
 .parallax-container {
-    height: 886px;
+    height: 93.22vh;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
 }

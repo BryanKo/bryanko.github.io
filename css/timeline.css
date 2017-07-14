@@ -1,11 +1,5 @@
 /*Credit: http://codepen.io/jeffglenn/pen/KNYoKa*/
 
-body {
-  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
-}
-
 #timeline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +15,7 @@ body {
           transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
-  height: 100vh;
+  height: 78.1vh;
   min-height: 600px;
   color: #fff;
   overflow: hidden;
