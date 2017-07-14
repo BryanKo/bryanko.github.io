@@ -9,20 +9,22 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
 		<!--Font Awesome-->
-		<link rel="stylesheet" href="./font/css/font-awesome.min.css">
+		<script src="https://use.fontawesome.com/1139093eab.js"></script>
 
 		<!--Custom CSS-->
 		<link rel="stylesheet" type="text/css" href="./css/icoHover.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/parallax.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/timeline.css"/>
 	</head>
 
 	<body>
+		<!--nav bar-->
 		<div class="navbar-fixed">
 			<nav class="deep-purple accent-2">
 				<div class="nav-wrapper">
 					<a href="./">Bryan's Webpage</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="./res/BryanKo_Resume.pdf">Résumé</a></li>
+						<li><a href="./#projects">Projects</a></li>
 						<li><a href="./routing.html">Timeline</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
@@ -30,17 +32,62 @@
 			</nav>
 		</div>
 
-		<div class="center-align">
-		<br>
-		<h1>CURRENTLY UNDER DEVELOPMENT</h1>
-		<br>
-		</div>
+		<!--Timeline section-->
+		<section id="timeline">
+		  
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+				<div class="tl-year">
+				  	<p class="f2 heading--sanSerif">2011</p>
+				</div>
+				<div class="tl-content">
+				  	<h1>Lorem ipsum dolor sit</h1>
+				  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+				</div>
+			</div>
 
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+				<div class="tl-year">
+				  	<p class="f2 heading--sanSerif">2013</p>
+				</div>
+
+				<div class="tl-content">
+				  	<h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+				  	<p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+				</div>
+			</div>
+
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+				<div class="tl-year">
+				  	<p class="f2 heading--sanSerif">2014</p>
+				</div>
+
+				<div class="tl-content">
+				  	<h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+				  	<p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+				</div>
+			</div>
+
+			<div class="tl-item">
+				<div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+				<div class="tl-year">
+				  	<p class="f2 heading--sanSerif">2016</p>
+				</div>
+				<div class="tl-content">
+				  	<h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+				  	<p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+				</div>
+			</div>
+		</section>
+
+      	<!--footer-->
       	<footer class="page-footer deep-purple accent-2">
       		<div class="container">
       			<div class="row center-align white-text">
       				Contact Information
-      				<div id="contactInfo" class="contact" onclick="contactNav()">
+      				<div id="contactInfo" class="contact">
 	                    <a href="https://www.linkedin.com/in/bryan-ko-303292124/">
 	                        <i class="fa fa-linkedin-square fa-2x"></i>
 	                    </a>
@@ -59,11 +106,10 @@
       			</div>
       		</div>
     	</footer>
+    	
     	<!--Import jQuery before materialize.js-->
       	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
-      	<!--Custom js-->
-		<script src="js/parallax.js" charset="utf-8"></script>
+      	<!--Custom js files-->
 	</body>
 </html>
