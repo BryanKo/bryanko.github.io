@@ -1,0 +1,16 @@
+/*hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #551A8B;
+    margin: 1em 0;
+    padding: 0; 
+}*/
+
+.bigHr {
+    background-color: #9C27B0 !important;
+    color: #9C27B0 !important;
+    border: solid 2px #9C27B0 !important;
+    height: 5px !important;
+    width: 250px !important;
+}

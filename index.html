@@ -14,21 +14,22 @@
 
 		<!--Custom CSS-->
 		<link rel="stylesheet" type="text/css" href="./css/parallax.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/icoHover.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/hover.css"/>
 		<link rel="stylesheet" type="text/css" href="./css/position.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/color.css"/>
 	</head>
 
-	<body>
+	<body class="blue-grey darken-4">
 		<!--nav bar-->
 		<div class="navbar-fixed">
-			<nav class="deep-purple accent-2">
+			<nav class="grey darken-4">
 				<div class="nav-wrapper">
-					<a href="#">Bryan's Webpage</a>
+					<a href="#" class="purple-text">Bryan's Webpage</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="./res/BryanKo_Resume.pdf">Résumé</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="./timeline.html">Timeline</a></li>
-						<li><a href="#contactInfo">Contact</a></li>
+						<li><a href="./res/BryanKo_Resume.pdf" class="grey-text text-lighten-1">Résumé</a></li>
+						<li><a href="#projects" class="grey-text text-lighten-1">Projects</a></li>
+						<li><a href="./timeline.html" class="grey-text text-lighten-1">Timeline</a></li>
+						<li><a href="#contactInfo" class="grey-text text-lighten-1">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -36,37 +37,21 @@
 
 		<div>
 			<div class="parallax-container">
-      			<div class="parallax img-resonsive"><img src="./img/background.png"></div>
-
-                    <!-- Old work that works without col
-					<div class="card cardPos2 waves-effect waves-block waves-light center-align z-depth-5">
-					<div class="card-image waves-effect waves-light">
-						<img class="activator" src="img/me.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title center-align activator grey-text text-darken-4">Bryan Ko<i class="material-icons right">more_vert</i></span>
-						<p>Undergraduate at University of California, Santa Cruz</p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">About Me<i class="material-icons right">close</i></span> 
-						<p>I am a 4th year Computer Science major at University of California, Santa Cruz. My expected gradutation date is June 2018. I am currently interested in computer vision and web development. I love learning about computers and how they work.</p>
-					</div>
-				</div> -->
-
+      			<div class="parallax img-resonsive"><img src="./img/background2.jpg"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col s12 m4 offset-m4">
-							<div class="card cardPos center-align z-depth-5">
+							<div class="card cardPos center-align z-depth-5 grey darken-4">
 								<div class="card-image waves-effect waves-light">
 									<img class="activator" src="img/me.jpg">
 								</div>
 								<div class="card-content">
-									<span class="card-title activator grey-text text-darken-4">Bryan Ko<i class="material-icons right">more_vert</i></span>
-									<p>Undergraduate at University of California, Santa Cruz</p>
+									<span class="card-title activator purple-text">Bryan Ko<i class="material-icons right">more_vert</i></span>
+									<p class="grey-text text-lighten-1">Undergraduate at University of California, Santa Cruz</p>
 								</div>
-								<div class="card-reveal">
-									<span class="card-title grey-text text-darken-4">About Me<i class="material-icons right">close</i></span>
-									<p>I am a 4th year Computer Science major at University of California, Santa Cruz. My expected gradutation date is June 2018. I am currently interested in computer vision and web development. I love learning about computers and how they work.</p>
+								<div class="card-reveal grey darken-4">
+									<span class="card-title purple-text">About Me<i class="material-icons right">close</i></span>
+									<p class="grey-text text-lighten-1">I am a 4th year Computer Science major at University of California, Santa Cruz. My expected gradutation date is June 2018. I am currently interested in computer vision and web development. I love learning about computers and how they work.</p>
 								</div>
 							</div>
 						</div>
@@ -79,46 +64,46 @@
       	<!--About Me section-->
       	<div class="section">
       		<span id="projects" class="anchor"></span>
-      		<h1 class="center-align">Projects</h1>
-      		<hr>
+      		<h1 class="center-align purple-text">Projects</h1>
+      		<hr class="bigHr purple">
       		<div class="container">
       			<div class="row">
       				<div class="col s12 m3 offset-m2">
-      					<div class="card projCardPos center-align z-depth-3 sticky-action">
+      					<div class="card projCardPos center-align z-depth-3 sticky-action grey darken-4">
       						<div class="card-image waves-effect waves-light">
       							<a href="http://ec2-107-23-73-244.compute-1.amazonaws.com:8080/"><img src="./img/famLogo.png"></a>
       						</div>
       						<div class="card-content">
-      							<span class="card-title activator grey-text text-darken-4">Fam<i class="material-icons right">more_vert</i></span>
-      							<p>A MEAN stack web application</p>
+      							<span class="card-title activator purple-text">Fam<i class="material-icons right">more_vert</i></span>
+      							<p class="grey-text text-lighten-1">A MEAN stack web application</p>
       						</div>
       						<div class="card-action">
-      							<a href="https://github.com/BryanKo/Fam">Source Code</a>
+      							<a href="https://github.com/BryanKo/Fam" class="purple-text">Source Code</a>
       						</div>
-      						<div class="card-reveal">
-      							<span class="card-title grey-text text-darken-4">Project Description<i class="material-icons right">close</i></span>
-      							<p>A web application that helps users find activities/events/food/etc. near the user with the help of community reviews.</p>
+      						<div class="card-reveal grey darken-4">
+      							<span class="card-title purple-text">Project Description<i class="material-icons right">close</i></span>
+      							<p class="grey-text text-lighten-1">A web application that helps users find activities/events/food/etc. near the user with the help of community reviews.</p>
       							<br>
-      							<p>I was the project owner of this project and managed a team of 5.</p>
+      							<p class="grey-text text-lighten-1">I was the project owner of this project and managed a team of 5.</p>
       						</div>
       					</div>
       				</div>
 
       				<div class="col s12 m3 offset-m2">
-      					<div class="card projCardPos center-align z-depth-3 sticky-action">
+      					<div class="card projCardPos center-align z-depth-3 sticky-action grey darken-4">
       						<div class="card-image waves-effect waves-light">
       							<a href="https://github.com/BryanKo/debug-script"><img src="./img/pythonIcon.png"></a>
       						</div>
       						<div class="card-content">
-      							<span class="card-title activator grey-text text-darken-4">Python script<i class="material-icons right">more_vert</i></span>
-      							<p>A python script that searches .log files</p>
+      							<span class="card-title activator purple-text">Python script<i class="material-icons right">more_vert</i></span>
+      							<p class="grey-text text-lighten-1">A python script that searches .log files</p>
       						</div>
       						<div class="card-action">
-      							<a href="https://github.com/BryanKo/debug-script">Source Code</a>
+      							<a href="https://github.com/BryanKo/debug-script" class="purple-text">Source Code</a>
       						</div>
-      						<div class="card-reveal">
-      							<span class="card-title grey-text text-darken-4">Script Description<i class="material-icons right">close</i></span>
-      							<p>A python script that will search for a certain pattern and return matches lines that starts with "response" or "request" and contains "'severity': 'error'" and lines that starts with "Traceback".</p>
+      						<div class="card-reveal grey darken-4">
+      							<span class="card-title purple-text">Script Description<i class="material-icons right">close</i></span>
+      							<p class="grey-text text-lighten-1">A python script that will search for a certain pattern and return matches lines that starts with "response" or "request" and contains "'severity': 'error'" and lines that starts with "Traceback".</p>
       						</div>
       					</div>
       				</div>
@@ -127,9 +112,9 @@
       	</div>
 
       	<!--footer-->
-      	<footer class="page-footer deep-purple accent-2">
+      	<footer class="page-footer grey darken-4">
       		<div class="container">
-      			<div class="row center-align white-text">
+      			<div class="row center-align purple-text">
       				Contact Information
       				<div id="contactInfo" class="contact">
 	                    <a href="https://www.linkedin.com/in/bryan-ko-303292124/">
@@ -145,10 +130,9 @@
       			</div>
       		</div>
       		<div class="footer-copyright">
-      			<div class="container">
+      			<div class="container purple-text">
       				© 2017 Bryan Ko
       			</div>
-      		</div>
     	</footer>
     	
     	<!--Import jQuery before materialize.js-->

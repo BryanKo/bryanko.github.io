@@ -51,7 +51,7 @@
   transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 .tl-item:hover {
-  width: 30% !important;
+  width: 50% !important;
 }
 .tl-item:hover:after {
   opacity: 0;
@@ -88,11 +88,14 @@
   opacity: 0;
 }
 .tl-content h1 {
-  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
   text-transform: uppercase;
-  color: #1779cf;
+  color: #9C27B0;
   font-size: 1.44rem;
   font-weight: normal;
+}
+
+.tl-content p {
+  color: #BDBDBD;
 }
 
 .tl-year {
@@ -102,13 +105,13 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   z-index: 1;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid #9C27B0;
+  border-bottom: 1px solid #9C27B0;
 }
 .tl-year p {
-  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 1.728rem;
   line-height: 0;
+  color: #9C27B0;
 }
 
 .tl-bg {
