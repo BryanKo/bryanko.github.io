@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--Materialized-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
 		<!--Font Awesome-->
@@ -14,6 +15,7 @@
 		<!--Custom CSS-->
 		<link rel="stylesheet" type="text/css" href="./css/hover.css"/>
 		<link rel="stylesheet" type="text/css" href="./css/timeline.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/sidebarMobileFix.css"/>
 	</head>
 
 	<body>
@@ -21,13 +23,20 @@
 		<div class="navbar-fixed">
 			<nav class="grey darken-4">
 				<div class="nav-wrapper">
-					<a href="./" class="purple-text">Bryan's Webpage</a>
+					<a href="./" class="brand-logo purple-text">Bryan's Webpage</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons purple-text">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="./res/BryanKo_Resume.pdf" class="grey-text text-lighten-1">Résumé</a></li>
 						<li><a href="./#projects" class="grey-text text-lighten-1">Projects</a></li>
 						<li><a href="./timeline.html" class="grey-text text-lighten-1">Timeline</a></li>
-						<li><a href="#" class="grey-text text-lighten-1">Contact</a></li>
+						<li><a href="#contactInfo" class="grey-text text-lighten-1">Contact</a></li>
 					</ul>
+					<ul class="side-nav grey darken-4" id="mobile-demo">
+		        		<li><a href="./res/BryanKo_Resume.pdf" class="grey-text text-lighten-1">Résumé</a></li>
+		        		<li><a href="./#projects" class="grey-text text-lighten-1">Projects</a></li>
+		        		<li><a href="./timeline.html" class="grey-text text-lighten-1">Timeline</a></li>
+		        		<li><a href="#contactInfo" class="grey-text text-lighten-1">Contact</a></li>
+		      		</ul>
 				</div>
 			</nav>
 		</div>
@@ -141,5 +150,6 @@
       	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
       	<!--Custom js files-->
+      	<script src="js/sidebar.js" charset="utf-8"></script>
 	</body>
 </html>
