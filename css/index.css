@@ -1,0 +1,63 @@
+/* parallax */
+.parallax-container {
+    height: 94vh;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: top right;
+}
+
+/* icon hovor */
+.fa-linkedin-square{
+	color: #ffffff;
+}
+.contact .fa-linkedin-square:hover{
+	color: #9e9e9e;
+}
+
+.fa-github-square{
+	color: #ffffff;
+}
+.contact .fa-github-square:hover{
+	color: #9e9e9e;
+}
+
+.fa-envelope{
+	color: #ffffff;
+}
+.contact .fa-envelope:hover{
+	color: #9e9e9e;
+}
+
+/* position */
+.projCardPos {
+	margin-top: 35%;
+	margin-bottom: 35%
+}
+
+.section {
+    position: relative;
+}
+
+.anchor {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -40px;
+    left: 0;
+    visibility: hidden;
+}
+
+/* color */
+.bigHr {
+    background-color: #9C27B0 !important;
+    color: #9C27B0 !important;
+    border: solid 2px #9C27B0 !important;
+    height: 5px !important;
+    width: 250px !important;
+}
+
+/* sidebar */
+.navbar-fixed { z-index: 999; }
