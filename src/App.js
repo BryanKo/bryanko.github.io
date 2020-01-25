@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import IntroParallax from './components/IntroParallax/IntroParallax';
 
 function App() {
   return (
@@ -19,6 +21,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <ParallaxProvider
+        style={{
+          height: '500px',
+        }}
+          >
+          <IntroParallax />
+      </ParallaxProvider>
     </div>
   );
 }
