@@ -3,71 +3,30 @@ import logo from './logo.svg';
 import './App.css';
 import IntroBanner from './components/IntroBanner/IntroBanner';
 import IntroImg from './img/ucscBackground.jpg';
+import profileImg from './img/profilePic.jpg';
 
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
-const HeroBanner = ({ image, min, max, children }) => (
-  <div className="hero-container">
-      <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate>
-          <div
-              className="hero-image"
-              style={{ backgroundImage: `url(${image})` }}
-          />
-      </Parallax>
-      <div className="hero-children">{children}</div>
-  </div>
-);
-
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    //   </div>
-
-    // <div>
-    //   <ParallaxProvider>
-    //     <main>
-    //       <nav />
-    //       <IntroBanner
-    //         image={IntroImg}
-    //         min={"-20"}
-    //         max={"20"}
-    //       >
-    //       <h1>@</h1>
-    //       <h1>@</h1>
-    //       <h1>@</h1>
-    //       <h1>@</h1>
-    //       <h1>@</h1>
-    //       </IntroBanner>
-    //     </main>
-    //   </ParallaxProvider>
-    //   <div background-color="white" postion="absolute" margin-top="-50%">
-    //     Testing
-    //   </div>
-    // </div>
-
     <ParallaxProvider>
       <main>
-        <nav />
+        {/* <nav /> */}
         <IntroBanner
-          min={'-20%'}
-          max={'20%'}
+          min={'-50%'}
+          max={'0%'}
           image={IntroImg}
         >
-          <h1>Hero Banner with Parallax</h1>
+
+          <div className="intro-center">
+            <img className="profile-circle" src={profileImg}/>
+            <div className="">
+              <h2>Bryan Ko</h2>
+              <h3>Software Engineer Asc at Lockheed Martin</h3>
+              <h3>I am a software engineer that loves to travel and eat great food!</h3>
+            </div>
+          </div>
+          
         </IntroBanner>
         <h1>Talk about me!</h1>
       </main>

@@ -10,9 +10,10 @@ const IntroBanner = ({ image, min, max, children }) => (
 				className="parallax-img"
 				style={{ backgroundImage: `url(${image})`  }}
 			/>
-			{/* <div className="intro-children">{children}</div> */}
+			<div className="intro-children">
+				{children}
+			</div>
 		</Parallax>
-		<div className="intro-children">{children}</div>
 	</div>
 );
 
