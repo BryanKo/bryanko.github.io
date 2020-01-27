@@ -9,6 +9,8 @@ import IntroBanner from './components/IntroBanner/IntroBanner';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ProfilePicture from './components/ProfiePicture/ProfilePicture';
 import ProfileDesc from './components/ProfileDesc/ProfileDesc';
+import ExpAccordion from './components/ExpAccordion/ExpAccordion';
+import ProjectExp from './components/ProjectExp/ProjectExp';
 
 
 
@@ -32,9 +34,53 @@ function App() {
               <ProfileDesc />
             </Col>
           </Row>
-        </Container>
-        <Container>
-          <h1>Talk about me!</h1>
+          <Row>
+            <Col>
+              <div className="center-title-section">
+                <h1>Work Experience</h1>
+              </div>
+              <ExpAccordion
+                exps={[
+                  {
+                    title: "Software Engineer Asc at Lockheed Martin | Febuary 2019 - Present",
+                    desc: "Description of work at Lockheed Martin",
+                    img: "test",
+                  },
+                ]}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="center-title-section">
+                <h1>Projects</h1>
+              </div>
+              <ExpAccordion
+                exps={[
+                  {
+                    title: "IoT Data Visualization Console",
+                    desc: "Description of Amazon Lab126 Project",
+                    img: "test",
+                  },
+                  {
+                    title: "Welp",
+                    desc: "Description of Welp",
+                    img: "test",
+                  },
+                  {
+                    title: "Food Now",
+                    desc: "Description of Food Now",
+                    img: "test",
+                  },
+                  {
+                    title: "Fam",
+                    desc: "Description of Fam",
+                    img: "test",
+                  },
+                ]}
+              />
+            </Col>
+          </Row>
         </Container>
       </main>
     </ParallaxProvider>
