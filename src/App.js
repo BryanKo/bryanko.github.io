@@ -1,11 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import IntroBanner from './components/IntroBanner/IntroBanner';
 import IntroImg from './img/ucscBackground.jpg';
 import profileImg from './img/profilePic.jpg';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import IntroBanner from './components/IntroBanner/IntroBanner';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import ProfilePicture from './components/ProfiePicture/ProfilePicture';
+import ProfileDesc from './components/ProfileDesc/ProfileDesc';
+
+
 
 function App() {
   return (
@@ -13,22 +18,24 @@ function App() {
       <main>
         {/* <nav /> */}
         <IntroBanner
-          min={'-50%'}
+          min={'-30%'}
           max={'0%'}
           image={IntroImg}
         >
-
-          <div className="intro-center">
-            <img className="profile-circle" src={profileImg}/>
-            <div className="">
-              <h2>Bryan Ko</h2>
-              <h3>Software Engineer Asc at Lockheed Martin</h3>
-              <h3>I am a software engineer that loves to travel and eat great food!</h3>
-            </div>
-          </div>
-          
         </IntroBanner>
-        <h1>Talk about me!</h1>
+        <Container>
+          <Row className="center-profile">
+            <Col xs={12} md={4}>
+              <ProfilePicture image={profileImg} />
+            </Col>
+            <Col xs={12} md={8} className="profile-box">
+              <ProfileDesc />
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <h1>Talk about me!</h1>
+        </Container>
       </main>
     </ParallaxProvider>
   );

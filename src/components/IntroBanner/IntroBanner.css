@@ -1,23 +1,12 @@
 .intro-container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height:80vh;
   overflow: hidden;
 }
 
 .parallax-img {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background-position: center;
-}
-
-.intro-children {
-  position: absolute;
-  top: 65vh;
-  bottom: 0vh;
-  left: 0vw;
-  right: 0vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
