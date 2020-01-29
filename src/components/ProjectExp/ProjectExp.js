@@ -7,45 +7,49 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const ProjectExp = () => {
   return (
-    <VerticalTimeline
-      animate={true}
-    >
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="Febuary 2019 - Present"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    <div>
+      <h1 className="center-timeline">Projects</h1>
+      <VerticalTimeline
+        animate={true}
       >
-        <h3 className="vertical-timeline-element-title">Lockheed Martin</h3>
-        <h4 className="vertical-timeline-element-subtitle">Software Engineer Asc</h4>
-        <div>
-          <img className="fit-img" src={LMLogo} alt="LMLogo" />
-          <p>Description about Lockheed Martin</p>
-        </div>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Febuary 2019 - Present"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        >
+          <h3 className="vertical-timeline-element-title">Lockheed Martin</h3>
+          <h4 className="vertical-timeline-element-subtitle">Software Engineer Asc</h4>
+          <div>
+            <img className="fit-img" src={LMLogo} alt="LMLogo" />
+            <p>Description about Lockheed Martin</p>
+          </div>
 
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="December 2016 - January 2017"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      >
-        <h3 className="vertical-timeline-element-title">Bluejay Mobile Health</h3>
-        <h4 className="vertical-timeline-element-subtitle">Software Engineer Intern</h4>
-        <p>
-          Description about Bluejay Mobile Health
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="December 2016 - January 2017"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        >
+          <h3 className="vertical-timeline-element-title">Bluejay Mobile Health</h3>
+          <h4 className="vertical-timeline-element-subtitle">Software Engineer Intern</h4>
+          <p>
+            Description about Bluejay Mobile Health
         </p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="August 2016 - Septemer 2016"
-        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      >
-        <h3 className="vertical-timeline-element-title">Bluejay Mobile Health</h3>
-        <h4 className="vertical-timeline-element-subtitle">QA Engineer Intern</h4>
-        <p>
-          Description about Bluejay Mobile Health
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="August 2016 - Septemer 2016"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        >
+          <h3 className="vertical-timeline-element-title">Bluejay Mobile Health</h3>
+          <h4 className="vertical-timeline-element-subtitle">QA Engineer Intern</h4>
+          <p>
+            Description about Bluejay Mobile Health
         </p>
-      </VerticalTimelineElement>
-    </VerticalTimeline>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
+    </div>
+
   )
 };
 

@@ -9,9 +9,9 @@ import IntroBanner from './components/IntroBanner/IntroBanner';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ProfilePicture from './components/ProfiePicture/ProfilePicture';
 import ProfileDesc from './components/ProfileDesc/ProfileDesc';
-// import ExpAccordion from './components/ExpAccordion/ExpAccordion';
 import ProjectExp from './components/ProjectExp/ProjectExp';
 import WorkExp from './components/WorkExp/WorkExp';
+import TechSkill from './components/TechSkill/TechSkill';
 
 
 
@@ -34,22 +34,18 @@ function App() {
                 <ProfileDesc />
               </Col>
             </Row>
+            <Row>
+              <Col xs={12}>
+                <WorkExp />
+              </Col>
+              <Row>
+                <TechSkill />
+              </Row>
+            </Row>
+
+            <ProjectExp />
           </Container>
         </ParallaxProvider>
-        <div>
-          <h1 className="center-title">Work Experience</h1>
-        </div>
-        <div>
-          <WorkExp />
-        </div>
-        <div>
-          <h1 className="center-title">Projects</h1>
-
-        </div>
-        <div>
-          <ProjectExp />
-        </div>
-
       </div>
     </div>
 

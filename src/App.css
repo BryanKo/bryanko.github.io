@@ -26,20 +26,18 @@ nav {
 .center-profile {
   position: flex;
   margin-top: -15vh;
+  margin-bottom: 15vh;
   text-align: center;
+  padding-bottom: 3vh;
   background-color: white;
 }
 
 .profile-box {
   display: flex;
-  align-items: center;
-  width: 100vw;
-  text-align: center;
-  margin: 10% 0;
-  min-height: 200px;
+  flex-direction: column;
 }
 
-.center-title {
+.center-timeline {
   text-align: center;
   background-color: white;
 }
