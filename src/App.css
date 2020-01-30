@@ -26,18 +26,16 @@ nav {
 .center-profile {
   position: flex;
   margin-top: -15vh;
-  margin-bottom: 15vh;
+  /* margin-bottom: 15vh; */
   text-align: center;
-  padding-bottom: 3vh;
-  background-color: white;
+  /* padding-bottom: 3vh; */
 }
 
 .profile-box {
   display: flex;
   flex-direction: column;
 }
-
-.center-timeline {
-  text-align: center;
-  background-color: white;
+.profile {
+  background-color: orange;
+  padding-bottom:11.5vh;
 }

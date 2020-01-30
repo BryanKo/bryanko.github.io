@@ -1,4 +1,16 @@
 .center-timeline {
   text-align: center;
-  background-color: white;
+  padding: 7rem;
+}
+
+.chip-padding {
+  margin: 5px;
+}
+
+.btn-padding {
+  margin-top: 5px;
+}
+.section-size {
+  /* height: 100vh; */
+  margin-bottom: 15vh;
 }

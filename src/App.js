@@ -12,6 +12,7 @@ import ProfileDesc from './components/ProfileDesc/ProfileDesc';
 import ProjectExp from './components/ProjectExp/ProjectExp';
 import WorkExp from './components/WorkExp/WorkExp';
 import TechSkill from './components/TechSkill/TechSkill';
+import HobbyDesc from './components/HobbyDesc/HobbyDesc';
 
 
 
@@ -25,6 +26,7 @@ function App() {
             max={'0%'}
             image={IntroImg}
           />
+          <div className="profile">
           <Container>
             <Row className="center-profile">
               <Col xs={12} md={4}>
@@ -34,17 +36,13 @@ function App() {
                 <ProfileDesc />
               </Col>
             </Row>
-            <Row>
-              <Col xs={12}>
-                <WorkExp />
-              </Col>
-              <Row>
-                <TechSkill />
-              </Row>
-            </Row>
-
-            <ProjectExp />
           </Container>
+          </div>
+
+          <WorkExp />
+          <TechSkill />
+          <ProjectExp />
+          <HobbyDesc />
         </ParallaxProvider>
       </div>
     </div>
