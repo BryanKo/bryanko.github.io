@@ -1,7 +1,11 @@
 import React from 'react';
 import './TechSkill.css';
 
-import { CardDeck, Card, Container } from 'react-bootstrap';
+import Dot from './../../img/dots.jpeg';
+import JS from './../../img/nodejs.png';
+import Java from './../../img/java.png';
+
+import { Row, Col, Card, Container } from 'react-bootstrap';
 
 const TechSkill = () => (
 
@@ -9,72 +13,62 @@ const TechSkill = () => (
     <div className="tech-title">
       <h1>Techinical Skills</h1>
     </div>
-    <Container className="tech-content">
-      <CardDeck className="tech-deck">
-        <Card className="tech-card">
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Programming Languages</Card.Title>
-            <Card.Text>
-              <p>
-                Java
+    <Container>
+      <Row className="tech-content justify-content-md-center">
+        <Col md={4} xs={12}>
+          <Card className="tech-card">
+            <Card.Img variant="top" className="card-custom-img" src={Java} />
+            <Card.Body>
+              <Card.Title>Programming Languages</Card.Title>
+              <Card.Text>
+                <p>
+                  Java
                     <br />
-                Python3
+                  Python3
                   </p>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className="tech-card">
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Javascript</Card.Title>
-            <Card.Text>
-              <p>
-                Angular (Typescript)
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={4} xs={12}>
+          <Card className="tech-card">
+            <Card.Img variant="top" className="card-custom-img" src={JS} />
+            <Card.Body>
+              <Card.Title>Frameworks</Card.Title>
+              <Card.Text>
+                <p>
+                  Angular
                     <br />
-                React
+                  React
                     <br />
-                Node.js/Express
-                  </p>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className="tech-card">
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Other</Card.Title>
-            <Card.Text>
-              <p>
-                SQL/NoSQL
+                  Node.js/Express.js
+              </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={4} xs={12}>
+          <Card className="tech-card">
+            <Card.Img variant="top" className="card-custom-img" src={Dot} />
+            <Card.Body>
+              <Card.Title>Other</Card.Title>
+              <Card.Text>
+                <p>
+                  SQL/NoSQL
                     <br />
-                HTML/CSS
+                  HTML/CSS
                     <br />
-                Agile Development
+                  Agile Development
                     <br />
-                Git
-                  </p>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className="tech-card">
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Other</Card.Title>
-            <Card.Text>
-              <p>
-                SQL/NoSQL
-                    <br />
-                HTML/CSS
-                    <br />
-                Agile Development
-                    <br />
-                Git
-                  </p>
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </CardDeck>
+                  Git
+              </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </Container>
+
   </div>
 
 );

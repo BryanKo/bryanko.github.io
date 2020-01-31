@@ -1,0 +1,19 @@
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info {
+  background-color: #d32f2f;
+  height: 10vh;
+  margin-top:auto;
+  color: white;
+  text-align: center;
+}
+
+.page-bottom {
+  height: 5vh;
+  background-color: #c62828;
+  margin-top: auto;
+  color: white;
+  text-align: center;
+}

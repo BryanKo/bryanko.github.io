@@ -22,13 +22,13 @@ const ProjectExp = () => {
             icon={<Web />}
           >
             <div>
+              <h3 className="vertical-timeline-element-title">IoT Data Visualization Console</h3>
+              <h4 className="vertical-timeline-element-subtitle">React Project</h4>
               <div>
                 <Chip className="chip-padding" label={"React"} />
                 <Chip className="chip-padding" label={"AWS"} />
                 <Chip className="chip-padding" label={"DynamoDB"} />
               </div>
-              <h3 className="vertical-timeline-element-title">IoT Data Visualization Console</h3>
-              <h4 className="vertical-timeline-element-subtitle">React Project</h4>
               <p>
                 Visualizes IoT device data produce understandable information.
               </p>
@@ -41,13 +41,13 @@ const ProjectExp = () => {
             icon={<Web />}
           >
             <div>
+              <h3 className="vertical-timeline-element-title">Fast Resturant Suggestion</h3>
+              <h4 className="vertical-timeline-element-subtitle">React Project</h4>
               <div>
                 <Chip className="chip-padding" label={"React"} />
                 <Chip className="chip-padding" label={"Express.js"} />
                 <Chip className="chip-padding" label={"Yelp API"} />
               </div>
-              <h3 className="vertical-timeline-element-title">Fast Resturant Suggestion</h3>
-              <h4 className="vertical-timeline-element-subtitle">React Project</h4>
               <p>Suggest resturant suggested based on computer location and user input.</p>
               <Button className="btn-padding" variant="link" href="https://github.com/BryanKo/food-now">Source Code</Button>
             </div>
@@ -59,12 +59,13 @@ const ProjectExp = () => {
             icon={<Android />}
           >
             <div>
+              <h3 className="vertical-timeline-element-title">Activity Planner</h3>
+              <h4 className="vertical-timeline-element-subtitle">Android Project</h4>
               <div>
                 <Chip className="chip-padding" label={"Android"} />
                 <Chip className="chip-padding" label={"Yelp API"} />
+                <Chip className="chip-padding" label={"Dark Sky API"} />
               </div>
-              <h3 className="vertical-timeline-element-title">Activity Planner</h3>
-              <h4 className="vertical-timeline-element-subtitle">Android Project</h4>
               <p>Suggests activites to do based on device location and future weather and time.</p>
               <Button className="btn-padding" variant="link" href="https://github.com/BryanKo/Welp">Source Code</Button>
             </div>
@@ -76,11 +77,11 @@ const ProjectExp = () => {
           icon={<Android />}
         >
           <div>
+            <h3 className="vertical-timeline-element-title">Connect4</h3>
+            <h4 className="vertical-timeline-element-subtitle">Android Project</h4>
             <div>
               <Chip className="chip-padding" label={"Android"} />
             </div>
-            <h3 className="vertical-timeline-element-title">Connect4</h3>
-            <h4 className="vertical-timeline-element-subtitle">Android Project</h4>
             <p>Connect4 Android Application</p>
             <Button className="btn-padding" variant="link" href="https://github.com/BryanKo/Connect4">Source Code</Button>
           </div>
@@ -92,11 +93,11 @@ const ProjectExp = () => {
           icon={<Android />}
         >
           <div>
+            <h3 className="vertical-timeline-element-title">Android Calculator</h3>
+            <h4 className="vertical-timeline-element-subtitle">Android Project</h4>
             <div>
               <Chip className="chip-padding" label={"Android"} />
             </div>
-            <h3 className="vertical-timeline-element-title">Android Calculator</h3>
-            <h4 className="vertical-timeline-element-subtitle">Android Project</h4>
             <p>Simple Android calculator to learn about Android application.</p>
             <Button className="btn-padding" variant="link" href="https://github.com/BryanKo/SimpleAndroidCalc">Source Code</Button>
           </div>

@@ -1,6 +1,6 @@
 .center-timeline {
   text-align: center;
-  padding: 7rem;
+  padding: 5rem;
 }
 
 .chip-padding {
@@ -12,5 +12,5 @@
 }
 .section-size {
   /* height: 100vh; */
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }

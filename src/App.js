@@ -13,6 +13,7 @@ import ProjectExp from './components/ProjectExp/ProjectExp';
 import WorkExp from './components/WorkExp/WorkExp';
 import TechSkill from './components/TechSkill/TechSkill';
 import HobbyDesc from './components/HobbyDesc/HobbyDesc';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -38,11 +39,11 @@ function App() {
             </Row>
           </Container>
           </div>
-
           <WorkExp />
           <TechSkill />
           <ProjectExp />
           <HobbyDesc />
+          <Footer />
         </ParallaxProvider>
       </div>
     </div>
