@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import IntroImg from './img/ucscBackground.jpg';
 import profileImg from './img/profilePic.jpg';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
 
 import Navs from './components/Nav/Nav';
 import IntroBanner from './components/IntroBanner/IntroBanner';
@@ -16,8 +16,6 @@ import TechSkill from './components/TechSkill/TechSkill';
 import HobbyDesc from './components/HobbyDesc/HobbyDesc';
 import Footer from './components/Footer/Footer';
 
-import { Navbar, Nav } from 'react-bootstrap';
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -27,10 +25,12 @@ class App extends React.Component {
     this.project = React.createRef();
     this.interestHobbies = React.createRef()
   }
+
   render() {
     return (
       <div className="app">
         <div>
+        
           <ParallaxProvider>
             {/* <Navs /> */}
             <div>
@@ -47,22 +47,25 @@ class App extends React.Component {
                       this.work.current.scrollIntoView({ behavior: 'smooth' });
                     }}>
                       Work Experience
-                  </Nav.Link>
+                    </Nav.Link>
                     <Nav.Link onClick={() => {
                       this.skill.current.scrollIntoView({ behavior: 'smooth' });
                     }}>
                       Technical Skills
-                  </Nav.Link>
+                    </Nav.Link>
                     <Nav.Link onClick={() => {
                       this.project.current.scrollIntoView({ behavior: 'smooth' });
                     }}>
                       Projects
-                  </Nav.Link>
+                    </Nav.Link>
                     <Nav.Link onClick={() => {
                       this.interestHobbies.current.scrollIntoView({ behavior: 'smooth' });
                     }}>
                       Interests/Hobbies
-                  </Nav.Link>
+                    </Nav.Link>
+                    <Nav.Link href="https://drive.google.com/file/d/15UbqygBOS-3swFH-S82aYqIryp-cvvwz/view?usp=sharing">
+                      Resume
+                    </Nav.Link>
                     <Nav.Link href="https://github.com/BryanKo">Github</Nav.Link>
                     <Nav.Link href="https://www.linkedin.com/in/bryan-ko/">Linkedin</Nav.Link>
                     <Nav.Link href="mailto:bryankko1@gmail.com">Email</Nav.Link>
