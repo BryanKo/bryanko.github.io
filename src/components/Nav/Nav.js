@@ -3,7 +3,7 @@ import './Nav.css';
 
 import { Menu } from '@material-ui/icons';
 // import { Navbar, Nav } from 'react-bootstrap';
-
+import { Link } from 'react-scroll';
 import { Navbar, Nav } from 'react-bootstrap';
 
 
@@ -14,14 +14,23 @@ const Navs = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="nav-content-color" id="basic-navbar-nav">
         <Nav className="ml-auto nav-content-color">
-          <Nav.Link>Work Experience</Nav.Link>
-          <Nav.Link>Technical Skills</Nav.Link>
-          <Nav.Link>Porjects</Nav.Link>
-          <Nav.Link>Interests</Nav.Link>
-          <Nav.Link>Hobbies</Nav.Link>
-          <Nav.Link>Github</Nav.Link>
-          <Nav.Link>Linkedin</Nav.Link>
-          <Nav.Link>Email</Nav.Link>
+          <Nav.Link>
+            <Link
+              to="work"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Work Experience
+          </Link>
+          </Nav.Link>
+          <Nav.Link href="#skill">Technical Skills</Nav.Link>
+          <Nav.Link href="#project">Porjects</Nav.Link>
+          <Nav.Link href="#interest">Interests</Nav.Link>
+          <Nav.Link href="#hobbies">Hobbies</Nav.Link>
+          <Nav.Link href="https://github.com/BryanKo">Github</Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/in/bryan-ko/">Linkedin</Nav.Link>
+          <Nav.Link href="mailto:bryankko1@gmail.com">Email</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

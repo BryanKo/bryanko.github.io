@@ -16,41 +16,93 @@ import TechSkill from './components/TechSkill/TechSkill';
 import HobbyDesc from './components/HobbyDesc/HobbyDesc';
 import Footer from './components/Footer/Footer';
 
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
-function App() {
-  return (
-    <div className="app">
-      <div>
-        <ParallaxProvider>
-          <Navs />
-          <IntroBanner
-            min={'-30%'}
-            max={'0%'}
-            image={IntroImg}
-          />
-          <div className="profile">
-          <Container>
-            <Row className="center-profile">
-              <Col xs={12} md={4}>
-                <ProfilePicture image={profileImg} />
-              </Col>
-              <Col xs={12} md={8} className="profile-box">
-                <ProfileDesc />
-              </Col>
-            </Row>
-          </Container>
-          </div>
-          <WorkExp />
-          <TechSkill />
-          <ProjectExp />
-          <HobbyDesc />
-          <Footer />
-        </ParallaxProvider>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.me = React.createRef();
+    this.work = React.createRef();
+    this.skill = React.createRef();
+    this.project = React.createRef();
+    this.interestHobbies = React.createRef()
+  }
+  render() {
+    return (
+      <div className="app">
+        <div>
+          <ParallaxProvider>
+            {/* <Navs /> */}
+            <div>
+              <Navbar className="nav-color" variant="dark" fixed="top" expand="lg">
+                <Navbar.Brand onClick={() => {
+                  this.me.current.scrollIntoView({ behavior: 'smooth' });
+                }}>
+                  Bryan Ko
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse className="nav-content-color" id="basic-navbar-nav">
+                  <Nav className="ml-auto nav-content-color">
+                    <Nav.Link onClick={() => {
+                      this.work.current.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                      Work Experience
+                  </Nav.Link>
+                    <Nav.Link onClick={() => {
+                      this.skill.current.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                      Technical Skills
+                  </Nav.Link>
+                    <Nav.Link onClick={() => {
+                      this.project.current.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                      Projects
+                  </Nav.Link>
+                    <Nav.Link onClick={() => {
+                      this.interestHobbies.current.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                      Interests/Hobbies
+                  </Nav.Link>
+                    <Nav.Link href="https://github.com/BryanKo">Github</Nav.Link>
+                    <Nav.Link href="https://www.linkedin.com/in/bryan-ko/">Linkedin</Nav.Link>
+                    <Nav.Link href="mailto:bryankko1@gmail.com">Email</Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Navbar>
+            </div>
+            <div ref={this.me} />
+            <IntroBanner
+              min={'-30%'}
+              max={'0%'}
+              image={IntroImg}
+            />
+            <div className="profile">
+              <Container>
+                <Row className="center-profile">
+                  <Col xs={12} md={4}>
+                    <ProfilePicture image={profileImg} />
+                  </Col>
+                  <Col xs={12} md={8} className="profile-box">
+                    <ProfileDesc />
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+            <div ref={this.work} />
+            <WorkExp />
+            <div ref={this.skill} />
+            <TechSkill />
+            <div ref={this.project} />
+            <ProjectExp />
+            <div ref={this.interestHobbies} />
+            <HobbyDesc />
+            <Footer />
+          </ParallaxProvider>
+        </div>
       </div>
-    </div>
 
-  );
+    );
+  }
 }
 
 export default App;
