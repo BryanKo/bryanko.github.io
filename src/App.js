@@ -5,6 +5,7 @@ import IntroImg from './img/ucscBackground.jpg';
 import profileImg from './img/profilePic.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 
+import Navs from './components/Nav/Nav';
 import IntroBanner from './components/IntroBanner/IntroBanner';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ProfilePicture from './components/ProfiePicture/ProfilePicture';
@@ -15,13 +16,14 @@ import TechSkill from './components/TechSkill/TechSkill';
 import HobbyDesc from './components/HobbyDesc/HobbyDesc';
 import Footer from './components/Footer/Footer';
 
-
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="app">
       <div>
         <ParallaxProvider>
+          <Navs />
           <IntroBanner
             min={'-30%'}
             max={'0%'}

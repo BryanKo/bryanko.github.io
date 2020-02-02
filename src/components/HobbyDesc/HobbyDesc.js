@@ -125,7 +125,7 @@ const HobbyDesc = () => (
               <Card.Title>Anime</Card.Title>
               <Card.Text>
                 Seishun Buta Yarou <br />
-                Code Geasse <br />
+                Code Geass <br />
                 Full Metal Alchemist Brotherhood
             </Card.Text>
             </Card.Body>

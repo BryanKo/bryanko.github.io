@@ -21,11 +21,8 @@ const TechSkill = () => (
             <Card.Body>
               <Card.Title>Programming Languages</Card.Title>
               <Card.Text>
-                <p>
-                  Java
-                    <br />
-                  Python3
-                  </p>
+                Java <br />
+                Python3
               </Card.Text>
             </Card.Body>
           </Card>
@@ -36,13 +33,9 @@ const TechSkill = () => (
             <Card.Body>
               <Card.Title>Frameworks</Card.Title>
               <Card.Text>
-                <p>
-                  Angular
-                    <br />
-                  React
-                    <br />
-                  Node.js/Express.js
-              </p>
+                Angular <br />
+                React <br />
+                Node.js/Express.js
               </Card.Text>
             </Card.Body>
           </Card>
@@ -53,15 +46,10 @@ const TechSkill = () => (
             <Card.Body>
               <Card.Title>Other</Card.Title>
               <Card.Text>
-                <p>
-                  SQL/NoSQL
-                    <br />
-                  HTML/CSS
-                    <br />
-                  Agile Development
-                    <br />
-                  Git
-              </p>
+                SQL/NoSQL <br />
+                HTML/CSS <br />
+                Agile Development <br />
+                Git
               </Card.Text>
             </Card.Body>
           </Card>
