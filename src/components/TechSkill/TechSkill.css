@@ -1,5 +1,6 @@
 .tech-section {
   /* height: 100vh; */
+  /* width: 80vw; */
   padding-bottom: 10vh;
   background-color: #f44336;
 }
@@ -19,7 +20,7 @@
 }
 
 .tech-card {
-  height: 375px;
+  height: 30rem;
   margin: 5px;
 }
 

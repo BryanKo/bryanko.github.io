@@ -24,6 +24,7 @@ nav {
 
 .center-profile {
   position: flex;
+  height: 30vh;
   margin-top: -15vh;
   /* margin-bottom: 15vh; */
   text-align: center;
@@ -36,5 +37,5 @@ nav {
 }
 .profile {
   background-color: #f44336;
-  padding-bottom:11.5vh;
+  padding-bottom:15vh;
 }

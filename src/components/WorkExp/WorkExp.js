@@ -5,13 +5,15 @@ import { Work } from '@material-ui/icons/';
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Chip } from '@material-ui/core/';
 
 
 const WorkExp = () => {
   return (
     <Container>
+    <Row >
+    <Col md={12}>
       <div className="section-size">
         <h1 className="center-timeline">Work Experience</h1>
         <VerticalTimeline>
@@ -61,6 +63,8 @@ const WorkExp = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
+      </Col>
+      </Row>
     </Container>
   )
 };
