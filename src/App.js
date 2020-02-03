@@ -88,7 +88,7 @@ class App extends React.Component {
             </div>
             <div ref={this.me} />
             <IntroBanner
-              min={'-30%'}
+              min={'-50%'}
               max={'0%'}
               image={IntroImg}
             />
@@ -100,6 +100,17 @@ class App extends React.Component {
                   </Col>
                   <Col xs={12} md={8} className="profile-box">
                     <ProfileDesc />
+                  </Col>
+                </Row>
+                <Row className="justify-content-md-center">
+                  <Col className="about-me" md={7} xs={12}>
+                    <h4>About Me</h4>
+                    <h5>
+                      I graduated from University of California, Santa Cruz with a Computer Science BS degree.
+                      I have an interest in creating programs and tinkering with things. 
+                      I would like to think I can program... <br />
+                      I don't know what I'm doing. Pls hire me.
+                    </h5>
                   </Col>
                 </Row>
               </Container>

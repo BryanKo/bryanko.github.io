@@ -24,11 +24,7 @@ nav {
 
 .center-profile {
   position: flex;
-  height: 30vh;
-  margin-top: -15vh;
-  /* margin-bottom: 15vh; */
   text-align: center;
-  /* padding-bottom: 3vh; */
 }
 
 .profile-box {
@@ -37,5 +33,12 @@ nav {
 }
 .profile {
   background-color: #f44336;
-  padding-bottom:15vh;
+  margin-top: -13vh;
+  /* max-height: 45vh; */
+  padding-bottom:5vh;
+}
+.about-me {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
 }
