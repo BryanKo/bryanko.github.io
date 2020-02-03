@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04453fb7885510dfa4bf36576c5d37a9",
+    "revision": "e294a467d9af3ab98404a4a7a40ea67f",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.e672b052.chunk.css"
   },
   {
-    "revision": "d850e6f908fa18b36077",
-    "url": "/static/css/main.93d241ee.chunk.css"
+    "revision": "a4170718656de29d061a",
+    "url": "/static/css/main.1c3d72d7.chunk.css"
   },
   {
     "revision": "16cef62c35c5457b5709",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.f9c5c249.chunk.js.LICENSE"
   },
   {
-    "revision": "d850e6f908fa18b36077",
-    "url": "/static/js/main.2adbfa0e.chunk.js"
+    "revision": "a4170718656de29d061a",
+    "url": "/static/js/main.d6872991.chunk.js"
   },
   {
     "revision": "34ba74ffe0f239162bf1",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "24cc6d9497ab11e42aa13ad24252fb13",
     "url": "/static/media/credit-card.24cc6d94.jpg"
+  },
+  {
+    "revision": "a7dfd4ab6417dd2979a79360b7c64899",
+    "url": "/static/media/emma.a7dfd4ab.jpg"
   },
   {
     "revision": "bc7ace2a046e72e1dacef78e408c7de6",
@@ -70,9 +74,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5853e1abf97ee0fb71c08162a65c87db",
     "url": "/static/media/sakurajima-mai.5853e1ab.jpg"
-  },
-  {
-    "revision": "f755a7d483483188b6e2efb56e420810",
-    "url": "/static/media/ucscBackground.f755a7d4.jpg"
   }
 ]);
