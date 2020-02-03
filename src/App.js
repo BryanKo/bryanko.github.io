@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import IntroImg from './img/ucscBackground.jpg';
+import Emma from './img/emma.jpg';
 import profileImg from './img/profilePic.jpg';
 import { Container, Row, Col, Navbar, Nav, Button } from 'react-bootstrap';
 import ReactGA from 'react-ga';
@@ -90,7 +90,7 @@ class App extends React.Component {
             <IntroBanner
               min={'-50%'}
               max={'0%'}
-              image={IntroImg}
+              image={Emma}
             />
             <div className="profile">
               <Container>

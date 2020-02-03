@@ -7,5 +7,7 @@
 .parallax-img {
   width: 100vw;
   height: 100vh;
+  /* max-width: 100%; */
+  background-size: 200vh;
   background-position: center;
 }
