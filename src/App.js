@@ -29,34 +29,20 @@ class App extends React.Component {
     const trackingId = "UA-157586493-1";
     const location = window.location.pathname + window.location.search
     ReactGA.initialize(trackingId);
-    // ReactGA.set({ page: location });
-    // ReactGA.pageview(location);
-    ReactGA.set({
-      visitied: this.initializeReactGA(),
-      // any data that is relevant to the user session
-      // that you would like to track with google analytics
-    })
-    // console.log(location);
+    ReactGA.set({ page: location });
+    ReactGA.pageview(location);
+    // ReactGA.set({
+    //   visitied: this.initializeReactGA(),
+    // })
   }
 
-  initializeReactGA() {
-    // const trackingId = "UA-157586493-1"
-    // ReactGA.initialize(trackingId);
-    ReactGA.pageview('/');
-    // console.log('here');
-  }
-
-  gaHandler() {
-    ReactGA.event({
-      test: "sample button click",
-      action: "clicked"
-    });
-  }
+  // initializeReactGA() {
+  //   ReactGA.pageview('/');
+  // }
 
   render() {
     return (
       <div className="app">
-        <Button onClick={this.gaHandler}>Test</Button>
         <div>
           <ParallaxProvider>
             {/* <Navs /> */}
