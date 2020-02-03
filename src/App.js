@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import IntroImg from './img/ucscBackground.jpg';
 import profileImg from './img/profilePic.jpg';
-import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Nav, Button } from 'react-bootstrap';
+import ReactGA from 'react-ga';
 
 import Navs from './components/Nav/Nav';
 import IntroBanner from './components/IntroBanner/IntroBanner';
@@ -15,6 +16,7 @@ import WorkExp from './components/WorkExp/WorkExp';
 import TechSkill from './components/TechSkill/TechSkill';
 import HobbyDesc from './components/HobbyDesc/HobbyDesc';
 import Footer from './components/Footer/Footer';
+import Analytics from './components/Analytics/Analytics'
 
 class App extends React.Component {
   constructor(props) {
@@ -24,13 +26,38 @@ class App extends React.Component {
     this.skill = React.createRef();
     this.project = React.createRef();
     this.interestHobbies = React.createRef()
+    const trackingId = "UA-157586493-1";
+    const location = window.location.pathname + window.location.search
+    ReactGA.initialize(trackingId);
+    // ReactGA.set({ page: location });
+    // ReactGA.pageview(location);
+    ReactGA.set({
+      visitied: this.initializeReactGA(),
+      // any data that is relevant to the user session
+      // that you would like to track with google analytics
+    })
+    // console.log(location);
+  }
+
+  initializeReactGA() {
+    // const trackingId = "UA-157586493-1"
+    // ReactGA.initialize(trackingId);
+    ReactGA.pageview('/');
+    // console.log('here');
+  }
+
+  gaHandler() {
+    ReactGA.event({
+      test: "sample button click",
+      action: "clicked"
+    });
   }
 
   render() {
     return (
       <div className="app">
+        <Button onClick={this.gaHandler}>Test</Button>
         <div>
-        
           <ParallaxProvider>
             {/* <Navs /> */}
             <div>
