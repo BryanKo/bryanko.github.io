@@ -4,7 +4,7 @@ import './App.css';
 import Emma from './img/emma.jpg';
 import profileImg from './img/profilePic.jpg';
 import { Container, Row, Col, Navbar, Nav, Button } from 'react-bootstrap';
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
 import Navs from './components/Nav/Nav';
 import IntroBanner from './components/IntroBanner/IntroBanner';
@@ -28,9 +28,9 @@ class App extends React.Component {
     this.interestHobbies = React.createRef()
     const trackingId = "UA-157586493-1";
     const location = window.location.pathname + window.location.search
-    ReactGA.initialize(trackingId);
-    ReactGA.set({ page: location });
-    ReactGA.pageview(location);
+    // ReactGA.initialize(trackingId);
+    // ReactGA.set({ page: location });
+    // ReactGA.pageview(location);
     // ReactGA.set({
     //   visitied: this.initializeReactGA(),
     // })
