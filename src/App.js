@@ -22,12 +22,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.me = React.createRef();
+    this.about = React.createRef();
     this.work = React.createRef();
     this.skill = React.createRef();
     this.project = React.createRef();
     this.interestHobbies = React.createRef()
-    const trackingId = "UA-157586493-1";
-    const location = window.location.pathname + window.location.search
+    // const trackingId = "UA-157586493-1";
+    // const location = window.location.pathname + window.location.search
     // ReactGA.initialize(trackingId);
     // ReactGA.set({ page: location });
     // ReactGA.pageview(location);
@@ -56,6 +57,11 @@ class App extends React.Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="nav-content-color" id="basic-navbar-nav">
                   <Nav className="ml-auto nav-content-color">
+                  <Nav.Link onClick={() => {
+                      this.about.current.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                      About Me
+                    </Nav.Link>
                     <Nav.Link onClick={() => {
                       this.work.current.scrollIntoView({ behavior: 'smooth' });
                     }}>
@@ -102,6 +108,7 @@ class App extends React.Component {
                     <ProfileDesc />
                   </Col>
                 </Row>
+                <div ref={this.about} />
                 <Row className="justify-content-md-center">
                   <Col className="about-me" md={7} xs={12}>
                     <h4>About Me</h4>
