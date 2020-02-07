@@ -101,10 +101,10 @@ class App extends React.Component {
             <div className="profile">
               <Container>
                 <Row className="center-profile">
-                  <Col xs={12} md={4}>
+                  <Col xs={12} sm={12} md={12} lg={4}>
                     <ProfilePicture image={profileImg} />
                   </Col>
-                  <Col xs={12} md={8} className="profile-box">
+                  <Col xs={12} sm={12} md={12} lg={8} className="profile-box">
                     <ProfileDesc />
                   </Col>
                 </Row>
