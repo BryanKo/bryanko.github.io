@@ -109,13 +109,13 @@ const ProjectExp = () => {
             icon={<Web />}
           >
             <div>
+              <h3 className="vertical-timeline-element-title">Location Review</h3>
+              <h4 className="vertical-timeline-element-subtitle">Angular Project</h4>
               <div>
                 <Chip className="chip-padding" label={"Angular"} />
                 <Chip className="chip-padding" label={"Express.js"} />
                 <Chip className="chip-padding" label={"Google Maps API"} />
               </div>
-              <h3 className="vertical-timeline-element-title">Location Review</h3>
-              <h4 className="vertical-timeline-element-subtitle">Angular Project</h4>
               <p>Community driven platform to review locations on the map.</p>
               <Button className="btn-padding" variant="link" href="https://github.com/BryanKo/Fam">Source Code</Button>
             </div>
