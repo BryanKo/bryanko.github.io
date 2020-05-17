@@ -1,1 +1,1 @@
-[Bryan's Website](https://www.bryanko.github.io)
+[Bryan's Website](https://bryanko.github.io)
